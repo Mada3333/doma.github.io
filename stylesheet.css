@@ -1,29 +1,186 @@
-.title{
-    color: #02ccba;
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(images/taikinstep.gif);
+    background-color:rgb(248, 242, 237);
+    background-position: center center;
+    background-size:cover;
 }
 
-.top-wrapper{
-    height: 1200px;
-    background-image: url(IMG_1205.jpeg);
-    background-size: cover;
-    opacity: 0.8;
+li{
+    list-style: none;
 }
 
-.btn{
-    width: 240px;
-    height: 50px;
-    display: inline-block;
-    border-radius: 10px;
+.clear{
+    clear:left;
+}
+
+header{
+    height: 65px;
+    width: 100%;
+    background-color :rgba(176, 177, 178, 0.9);
+    position:fixed;
+    top:0;
+    z-index: 10;
 
 }
 
-.tarushiba{
-    background-color: rgba(250, 166, 26, 0.8);
-    color:white;
-    margin-right: 25px;
+.container{
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 80px;
 }
 
-.tanukitsu{
-    background-color: rgba(193, 153,  77, 0.8);
-    color: white;
+.header-left{
+    float: left;
+    font-weight: 700;
+}
+
+.header-left a{
+    line-height: 65px;
+    font-size: 40px;
+    color: rgb(115, 115, 115);
+    display:block;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.header-left a:hover{
+    color: rgba(115, 115, 115, 0.5);
+}
+
+.header-right{
+    float: right;
+    color:rgb(115, 115, 115);
+    
+}
+
+
+.header-right li{
+    float: left;
+    padding: 0 20px;
+    
+}
+
+.header-menu a{
+    text-decoration: none;
+    color:rgb(115, 115, 115);
+    font-size: 20px;
+    transition:all 0.5s;
+}
+
+.header-menu a:hover{
+    color:rgba(115, 115, 115, 0.5);
+}
+
+main{
+    padding-top:80px;
+    text-align: left;
+    color:black;
+}
+
+
+.section-title h1{
+    font-size: 120px;
+    font-weight: 700;
+    
+}
+
+.section-title h2{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.menu {
+    display:flex;
+    flex-direction: column;
+}
+
+
+.menu a{
+    text-decoration: none;
+   /* background-color: aqua;*/
+   font-size: 40px;
+   color:black;
+   margin-top: 40px;
+   transition:all 0.5s;
+   z-index: 2;
+   display: inline-block;
+   width:40px;
+   
+}
+
+.menu a:hover{
+    opacity: 0.5;
+}
+
+.section-title p{
+    font-size: 20px;
+    padding-top:20px;
+}
+
+.link{
+    margin-top:25px;
+}
+
+.twitter-logo{
+    width: 40px;
+    padding-right: 20px;
+}
+
+.yt-logo{
+    width: 120px;
+}
+
+.yt-embed{
+    display:block;
+    margin: 10px 0 20px 0;
+}
+
+.back{
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    padding: 30px 0;
+}
+
+.sound-embed iframe{
+    margin: 10px 0 ;
+}
+
+/*ここからタブレット向け*/
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    body{
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+}
+
+
+
+@media screen and (max-width: 600px){
+    body{
+        background-repeat: no-repeat;
+    }
+
+    .section-title h1{
+        font-size: 60px;
+    }
+
+    .section-title h2{
+        font-size: 15px;
+    }
+
+    .menu a{
+        font-size: 30px;
+    }
+
+    iframe{
+        width: 480px;
+
+    }
 }
